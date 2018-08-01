@@ -1,4 +1,5 @@
-﻿   var flag = false;
+﻿//1
+   var flag = false;
     var cur = {
         x:0,
         y:0
