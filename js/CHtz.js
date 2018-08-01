@@ -1,5 +1,4 @@
-﻿//1
-   var flag = false;
+﻿   var flag = false;
     var cur = {
         x:0,
         y:0
@@ -21,7 +20,7 @@
          $("#someElm").css("background-size","100%")
     }
     function move(){
-    	
+    	  
     	  $("#someElm").css("background",'url(images/ic_condition_hover.png)')
     	  $("#someElm").css("background-size","100%")
     	  $("html").css("overflow","hidden")
@@ -38,12 +37,7 @@
             y = dy+ny;
             someElm.style.left = x+"px";
             someElm.style.top = y +"px";
-        }
-//      document.addEventListener('touchmove', function (e) { 
-//      	e.preventDefault(); 
-//      	e.stopPropagation();
-//      }, false);
-        
+        }       
    }
     function end(){
     	var Y = $("#someElm").offset().top;
@@ -73,7 +67,8 @@
     someElm.addEventListener("mousemove",function(){
         move();
     },false);
-    someElm.addEventListener("touchmove",function(){
+    someElm.addEventListener("touchmove",function(e){
+    	e.preventDefault();
         move();
     },false)
     document.body.addEventListener("mouseup",function(){
