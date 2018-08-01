@@ -1,4 +1,4 @@
-   var flag = false;
+﻿   var flag = false;
     var cur = {
         x:0,
         y:0
@@ -81,12 +81,3 @@
 
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-//阻止默认行为
-    $(document).on("touchstart touchmove mousedown mousemove",function(event){
-        var tag = $(event.target).parents()[0].tagName;
-        var thistag = event.target.tagName;
-        if ( tag != "A" && tag != "INPUT" && tag != "TEXTAREA" && tag != "SELECT" && thistag != "A" && thistag != "INPUT" && thistag != "TEXTAREA" && thistag != "SELECT"  )
-        {
-            event.preventDefault();
-        }
-    })
