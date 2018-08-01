@@ -38,10 +38,10 @@
             someElm.style.left = x+"px";
             someElm.style.top = y +"px";
         }
-        document.addEventListener('touchmove', function (e) { 
-        	e.preventDefault(); 
-        	e.stopPropagation();
-        }, false);
+//      document.addEventListener('touchmove', function (e) { 
+//      	e.preventDefault(); 
+//      	e.stopPropagation();
+//      }, false);
         
    }
     function end(){
